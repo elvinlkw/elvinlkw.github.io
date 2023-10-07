@@ -1,13 +1,12 @@
 import React from 'react';
 import { StyledBubble } from './styles';
-import PropTypes from 'prop-types';
 
 const Bubble = ({ children }) => {
-  return <StyledBubble>{children}</StyledBubble>;
-};
-
-Bubble.propTypes = {
-  text: PropTypes.string.isRequired,
+  return (
+    <StyledBubble className='chat chat-start mb-2 text-xl'>
+      <div className='chat-bubble'>{children}</div>
+    </StyledBubble>
+  );
 };
 
 export default Bubble;
