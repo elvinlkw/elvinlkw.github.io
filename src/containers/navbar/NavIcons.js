@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '../Icon';
+import Icon from 'src/components/icon';
 import { navIcons } from './constants';
 
 const NavIcons = ({ color }) => {
