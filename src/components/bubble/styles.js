@@ -10,7 +10,7 @@ export const StyledBubble = styled.div`
     position: relative;
     align-items: flex-start;
     width: fit-content;
-    margin: 10px;
+    margin-bottom: 8px;
   }
 
   &:before {

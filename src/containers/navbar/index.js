@@ -14,15 +14,11 @@ const Navbar = () => {
   };
 
   return (
-    <div
-      className={`navbar bg-base-100 bg-${getColor('white')} text-${getColor(
-        'black'
-      )}`}
-    >
+    <div className={`fixed z-50 navbar p-0 `}>
       <div className={`container mx-auto ${hasScroll ? '' : 'border-b-2'}`}>
         <div className='flex-1'>
           <a className='btn btn-ghost normal-case text-xl' href='!#'>
-            Portfolio
+            Elvin
           </a>
         </div>
         <div className='flex-none'>
