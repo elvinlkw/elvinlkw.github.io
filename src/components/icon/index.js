@@ -12,7 +12,6 @@ const Icon = ({ color, size, icon, background }) => {
 };
 
 Icon.defaultProps = {
-  color: 'currentStroke',
   background: '',
   size: '20',
 };
