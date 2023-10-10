@@ -11,6 +11,10 @@ export const navIcons = [
 
 export const navLinks = [
   {
+    title: 'Home',
+    href: '',
+  },
+  {
     title: 'Projects',
     href: '',
   },

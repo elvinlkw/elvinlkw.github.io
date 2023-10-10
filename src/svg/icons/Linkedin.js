@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Linkedin = ({ color, size, background }) => {
+const Linkedin = ({ color, size }) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
       width={size}
       height={size}
       viewBox='0 0 24 24'
-      fill={background}
+      fill={'#0072b1'}
     >
       <path
         stroke={color}
