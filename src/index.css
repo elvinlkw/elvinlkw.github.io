@@ -5,7 +5,7 @@
 
 @layer components {
   .nav-link {
-    @apply hover:text-white hover:underline;
+    @apply hover:text-white text-white;
   }
 
   .nav-icon {
