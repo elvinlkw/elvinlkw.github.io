@@ -1,25 +1,47 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { skillsets } from 'src/containers/skills/constants';
+import isEmpty from 'lodash/isEmpty';
 
 const initialState = {
   filters: [],
-  skillsets: {},
+  skillsets,
+};
+
+const filterSkillsets = (filters) => {
+  if (isEmpty(filters)) {
+    return skillsets;
+  }
+
+  return skillsets.filter((skill) =>
+    skill.section.some((sec) => filters.includes(sec))
+  );
 };
 
 const skills = createSlice({
   name: 'skills',
   initialState,
   reducers: {
-    updateFilters: (state, action) => {
-      // TODO: Fix
+    addFilter: (state, action) => {
+      const updatedFilters = [...state.filters, action.payload];
       return {
         ...state,
-        filters: ['Hello'],
-        skillsets: { test: [] },
+        filters: updatedFilters,
+        skillsets: filterSkillsets(updatedFilters),
+      };
+    },
+    removeFilter: (state, action) => {
+      const updatedFilters = state.filters.filter(
+        (fname) => fname !== action.payload
+      );
+      return {
+        ...state,
+        filters: updatedFilters,
+        skillsets: filterSkillsets(updatedFilters),
       };
     },
   },
 });
 
-export const { updateFilters } = skills.actions;
+export const { addFilter, removeFilter } = skills.actions;
 
 export default skills.reducer;

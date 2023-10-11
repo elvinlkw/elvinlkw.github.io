@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import theme from 'src/theme';
 
 export const StyledCheckboxContainer = styled.div`
-  .checkbox:hover {
+  /* .checkbox:hover {
     background-image: linear-gradient(
         -45deg,
         transparent 65%,
@@ -22,7 +22,7 @@ export const StyledCheckboxContainer = styled.div`
         ${theme.colors.white} 50%,
         ${theme.colors.iBlue} 50.99%
       );
-    opacity: 0.25;
+    opacity: 0.25; */
   }
 
   .checkbox:checked {

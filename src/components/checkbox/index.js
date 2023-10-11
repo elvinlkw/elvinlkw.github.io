@@ -1,17 +1,12 @@
 import React from 'react';
 import { StyledCheckboxContainer } from './styles';
-import { useDispatch } from 'react-redux';
-import { updateFilters } from 'src/reducers/skills';
 
-const Checkbox = ({ label, checked, name, size }) => {
-  const dispatch = useDispatch();
+const Checkbox = ({ label, checked, name, size, onChange }) => {
   return (
-    <StyledCheckboxContainer
-      className='form-control'
-      onChange={(e) => dispatch(updateFilters())}
-    >
+    <StyledCheckboxContainer className='form-control'>
       <label className='label cursor-pointer'>
         <input
+          onChange={onChange}
           type='checkbox'
           name={name}
           checked={checked}

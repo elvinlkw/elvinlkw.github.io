@@ -3,12 +3,14 @@ import Linkedin from './Linkedin';
 import Github from './Github';
 
 // DevIcons imports
+import Apple from './devicons/Apple';
 import AWS from './devicons/AWS';
 import Bash from './devicons/Bash';
 import Bitbucket from './devicons/Bitbucket';
 import Bootstrap from './devicons/Bootstrap';
 import Confluence from './devicons/Confluence';
 import CSS from './devicons/CSS';
+import Cypress from './devicons/Cypress';
 import Docker from './devicons/Docker';
 import Eslint from './devicons/Eslint';
 import Express from './devicons/Express';
@@ -23,6 +25,7 @@ import Java from './devicons/Java';
 import Javascript from './devicons/Javascript';
 import Jest from './devicons/Jest';
 import Jira from './devicons/Jira';
+import Junit from './devicons/Junit';
 import Jquery from './devicons/Jquery';
 import Linux from './devicons/Linux';
 import Mongodb from './devicons/Mongodb';
@@ -39,18 +42,21 @@ import Tailwindcss from './devicons/Tailwindcss';
 import Terraform from './devicons/Terraform';
 import Typescript from './devicons/Typescript';
 import Webpack from './devicons/Webpack';
+import Windows from './devicons/Windows';
 
 const Icons = {
   Ellipsis,
   Linkedin,
   Github,
   // Devicons
+  Apple,
   AWS,
   Bash,
   Bitbucket,
   Bootstrap,
   Confluence,
   CSS,
+  Cypress,
   Docker,
   Eslint,
   Express,
@@ -65,6 +71,7 @@ const Icons = {
   Javascript,
   Jest,
   Jira,
+  Junit,
   Jquery,
   Linux,
   Mongodb,
@@ -81,6 +88,7 @@ const Icons = {
   Terraform,
   Typescript,
   Webpack,
+  Windows,
 };
 
 export default Icons;
