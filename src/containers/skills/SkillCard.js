@@ -10,6 +10,7 @@ const SkillCard = ({ name, icon }) => {
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
+      whileHover={{ scale: 1.2 }}
       key={icon}
     >
       <StyledCard>
