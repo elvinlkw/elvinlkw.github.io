@@ -7,7 +7,6 @@ import sortBy from 'lodash/sortBy';
 import { checkboxList } from './constants';
 import { addFilter, removeFilter } from 'src/reducers/skills';
 import { motion, AnimatePresence } from 'framer-motion';
-import theme from 'src/theme';
 
 const Skills = () => {
   const dispatch = useDispatch();
@@ -46,25 +45,29 @@ const Skills = () => {
           </StyledFilters>
         </div>
         <motion.div layout className='col-span-2 icon-container'>
-          {sortBy(skillsets, (sk) => sk.name).map(({ name, icon }) => (
-            <motion.div
-              layout
-              animate={{ opacity: 1 }}
-              initial={{ opacity: 0 }}
-              exit={{ opacity: 0 }}
-              key={icon}
-              data-tip={name}
-            >
-              <StyledCard>
-                <div className='card-image flex justify-center'>
-                  <Icon icon={icon} size={100} />
-                </div>
-                <div>
-                  <h3 className='text-md text-center'>{name.toLowerCase()}</h3>
-                </div>
-              </StyledCard>
-            </motion.div>
-          ))}
+          <AnimatePresence>
+            {sortBy(skillsets, (sk) => sk.name).map(({ name, icon }) => (
+              <motion.div
+                layout
+                animate={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                exit={{ opacity: 0 }}
+                key={icon}
+                data-tip={name}
+              >
+                <StyledCard>
+                  <div className='card-image flex justify-center'>
+                    <Icon icon={icon} size={100} />
+                  </div>
+                  <div>
+                    <h3 className='text-md text-center'>
+                      {name.toLowerCase()}
+                    </h3>
+                  </div>
+                </StyledCard>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </motion.div>
       </div>
     </StyledContainer>
