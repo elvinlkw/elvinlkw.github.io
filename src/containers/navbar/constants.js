@@ -11,15 +11,15 @@ export const navIcons = [
 
 export const navLinks = [
   {
-    title: 'Home',
+    title: 'Skills',
+    href: 'skills-and-tooling-section',
+  },
+  {
+    title: 'Experience',
     href: '',
   },
   {
     title: 'Projects',
-    href: '',
-  },
-  {
-    title: 'Experience',
     href: '',
   },
   {

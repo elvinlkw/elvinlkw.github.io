@@ -1,16 +1,16 @@
 import React from 'react';
-import { StyledCard, StyledContainer, StyledFilters } from './styles';
-import Icon from 'src/components/icon';
-import Checkbox from 'src/components/checkbox';
+import { StyledContainer } from './styles';
 import { useDispatch, useSelector } from 'react-redux';
 import sortBy from 'lodash/sortBy';
-import { checkboxList } from './constants';
 import { addFilter, removeFilter } from 'src/reducers/skills';
 import { motion, AnimatePresence } from 'framer-motion';
+import SkillCard from './SkillCard';
+import SkillsFilters from './SkillsFilters';
+import { navLinks } from '../navbar/constants';
 
 const Skills = () => {
   const dispatch = useDispatch();
-  const { skillsets, filters } = useSelector((state) => state.skills);
+  const { skillsets } = useSelector((state) => state.skills);
 
   const handleChange = (e) => {
     dispatch(
@@ -19,7 +19,7 @@ const Skills = () => {
   };
 
   return (
-    <StyledContainer className='py-16 h-fit'>
+    <StyledContainer id={navLinks[0].href} className='py-16 h-fit'>
       <div className='container mx-auto grid grid-cols-3 gap-8'>
         <div>
           <h1 className='text-4xl'>Skills & Tooling</h1>
@@ -29,43 +29,12 @@ const Skills = () => {
             ranging from programming languages, web frameworks, testing and
             quality assurance, problem solving and much more.
           </div>
-          <StyledFilters>
-            <legend className='text-lg'>Filters</legend>
-            <div className='flex flex-wrap'>
-              {checkboxList.map(({ name, label }) => (
-                <Checkbox
-                  key={label}
-                  label={label}
-                  checked={filters.includes(name)}
-                  name={name}
-                  onChange={handleChange}
-                />
-              ))}
-            </div>
-          </StyledFilters>
+          <SkillsFilters onChange={handleChange} />
         </div>
         <motion.div layout className='col-span-2 icon-container'>
           <AnimatePresence>
-            {sortBy(skillsets, (sk) => sk.name).map(({ name, icon }) => (
-              <motion.div
-                layout
-                animate={{ opacity: 1 }}
-                initial={{ opacity: 0 }}
-                exit={{ opacity: 0 }}
-                key={icon}
-                data-tip={name}
-              >
-                <StyledCard>
-                  <div className='card-image flex justify-center'>
-                    <Icon icon={icon} size={100} />
-                  </div>
-                  <div>
-                    <h3 className='text-md text-center'>
-                      {name.toLowerCase()}
-                    </h3>
-                  </div>
-                </StyledCard>
-              </motion.div>
+            {sortBy(skillsets, (sk) => sk.name).map((skill) => (
+              <SkillCard key={skill.name} {...skill} />
             ))}
           </AnimatePresence>
         </motion.div>

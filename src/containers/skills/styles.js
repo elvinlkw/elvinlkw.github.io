@@ -1,7 +1,7 @@
 import theme from 'src/theme';
 import styled from 'styled-components';
 
-export const StyledContainer = styled.div`
+export const StyledContainer = styled.section`
   background-color: #fcfcfc;
   min-height: 100vh;
 
