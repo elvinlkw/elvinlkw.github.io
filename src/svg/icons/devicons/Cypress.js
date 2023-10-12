@@ -26,7 +26,7 @@ const Cypress = ({ color, size }) => {
           gradientTransform='matrix(1 0 0 -1 0 -3642.9656)'
         >
           <stop offset='9.390000e-02' stopColor='#58D09E' />
-          <stop offset='0.9883' stopColor='#58D09E' stopOpacit='0' />
+          <stop offset='0.9883' stopColor='#58D09E' stopOpacity='0' />
         </linearGradient>
         <path
           fill={color ?? 'url(#SVGID_1_)'}

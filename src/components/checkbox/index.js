@@ -12,7 +12,7 @@ const Checkbox = ({ label, checked, name, size, onChange }) => {
           checked={checked}
           className={`checkbox checkbox-${size}`}
         />
-        <span className='label-text'>{label}</span>
+        <span className='label-text text-md'>{label}</span>
       </label>
     </StyledCheckboxContainer>
   );

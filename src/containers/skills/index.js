@@ -1,11 +1,13 @@
 import React from 'react';
-import { StyledContainer, StyledFilters } from './styles';
+import { StyledCard, StyledContainer, StyledFilters } from './styles';
 import Icon from 'src/components/icon';
 import Checkbox from 'src/components/checkbox';
 import { useDispatch, useSelector } from 'react-redux';
 import sortBy from 'lodash/sortBy';
 import { checkboxList } from './constants';
 import { addFilter, removeFilter } from 'src/reducers/skills';
+import { motion, AnimatePresence } from 'framer-motion';
+import theme from 'src/theme';
 
 const Skills = () => {
   const dispatch = useDispatch();
@@ -18,7 +20,7 @@ const Skills = () => {
   };
 
   return (
-    <StyledContainer className='py-12 h-screen'>
+    <StyledContainer className='py-16 h-fit'>
       <div className='container mx-auto grid grid-cols-3 gap-8'>
         <div>
           <h1 className='text-4xl'>Skills & Tooling</h1>
@@ -33,6 +35,7 @@ const Skills = () => {
             <div className='flex flex-wrap'>
               {checkboxList.map(({ name, label }) => (
                 <Checkbox
+                  key={label}
                   label={label}
                   checked={filters.includes(name)}
                   name={name}
@@ -42,13 +45,27 @@ const Skills = () => {
             </div>
           </StyledFilters>
         </div>
-        <div className='col-span-2 icon-container'>
+        <motion.div layout className='col-span-2 icon-container'>
           {sortBy(skillsets, (sk) => sk.name).map(({ name, icon }) => (
-            <li key={icon} className='tooltip tooltip-bottom' data-tip={name}>
-              <Icon icon={icon} size={100} />
-            </li>
+            <motion.div
+              layout
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              exit={{ opacity: 0 }}
+              key={icon}
+              data-tip={name}
+            >
+              <StyledCard>
+                <div className='card-image flex justify-center'>
+                  <Icon icon={icon} size={100} />
+                </div>
+                <div>
+                  <h3 className='text-md text-center'>{name.toLowerCase()}</h3>
+                </div>
+              </StyledCard>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </StyledContainer>
   );

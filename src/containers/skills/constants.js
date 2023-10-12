@@ -10,11 +10,11 @@ export const SECTIONS = {
 
 export const checkboxList = [
   {
-    label: 'Front-End Development',
+    label: 'Front-End',
     name: SECTIONS.FRONTEND,
   },
   {
-    label: 'Back-End Development & Databases',
+    label: 'Back-End & Databases',
     name: SECTIONS.BACKEND,
   },
   {
@@ -46,7 +46,7 @@ export const skillsets = [
     section: [SECTIONS.FRONTEND],
   },
   {
-    name: 'Amazon Web Services',
+    name: 'AWS',
     icon: 'AWS',
     section: [SECTIONS.DEVOPS],
   },

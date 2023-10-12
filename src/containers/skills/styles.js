@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
   background-color: #fcfcfc;
+  min-height: 100vh;
 
   h1 {
     color: ${theme.colors.iBlue};
@@ -12,10 +13,8 @@ export const StyledContainer = styled.div`
   .icon-container {
     display: grid;
     grid-auto-flow: row;
-    grid-template-rows: repeat(auto-fill, 100px);
-    grid-template-columns: repeat(auto-fill, 100px);
-    grid-auto-columns: 100px;
-    grid-auto-rows: 100px;
+    grid-template-rows: repeat(auto-fill, 150px);
+    grid-template-columns: repeat(auto-fill, 150px);
     grid-gap: 36px;
     justify-content: center;
   }
@@ -23,14 +22,51 @@ export const StyledContainer = styled.div`
 
 export const StyledFilters = styled.fieldset`
   border: 2px solid ${theme.colors.iBlue};
+  font-family: 'Lato';
+  padding: 8px;
 
   legend {
     padding: 4px;
     color: ${theme.colors.iBlue};
   }
 
-  label {
-    justify-content: flex-start;
-    gap: 4px;
+  .form-control {
+    margin: 0 4px;
+  }
+
+  .checkbox {
+    border: 1px solid ${theme.colors.black};
+  }
+
+  .checkbox:checked {
+    border: none;
+  }
+`;
+
+export const StyledCard = styled.div`
+  display: block;
+
+  .card-image {
+    padding-bottom: 8px;
+  }
+
+  h3 {
+    position: relative;
+    padding-top: 8px;
+    font-family: 'Lato';
+  }
+
+  h3::before {
+    content: '';
+    position: absolute;
+    background: ${theme.colors.black};
+    width: 60px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -30px;
+    -webkit-transition: margin-top 0.2s;
+    -moz-transition: margin-top 0.2s;
+    transition: margin-top 0.2s;
   }
 `;
