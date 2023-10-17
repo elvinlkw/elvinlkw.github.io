@@ -2,10 +2,18 @@ import React from 'react';
 import { StyledFilters } from './styles';
 import Checkbox from 'src/components/checkbox';
 import { checkboxList } from './constants';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { clearFilters } from 'src/reducers/skills';
 
 const SkillsFilters = ({ onChange }) => {
+  const dispatch = useDispatch();
   const { filters } = useSelector((state) => state.skills);
+
+  const handleClearFilters = (e) => {
+    e.preventDefault();
+    dispatch(clearFilters());
+  };
+
   return (
     <StyledFilters>
       <legend className='text-lg'>Filters</legend>
@@ -20,6 +28,13 @@ const SkillsFilters = ({ onChange }) => {
           />
         ))}
       </div>
+      <button
+        className='float-right text-blue hover:underline text-md'
+        disabled={!filters.length}
+        onClick={handleClearFilters}
+      >
+        Clear Filters
+      </button>
     </StyledFilters>
   );
 };

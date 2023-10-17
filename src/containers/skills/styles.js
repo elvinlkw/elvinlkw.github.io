@@ -41,6 +41,11 @@ export const StyledFilters = styled.fieldset`
   .checkbox:checked {
     border: none;
   }
+
+  button:disabled {
+    opacity: 0.2;
+    text-decoration: none;
+  }
 `;
 
 export const StyledCard = styled.div`

@@ -39,9 +39,12 @@ const skills = createSlice({
         skillsets: filterSkillsets(updatedFilters),
       };
     },
+    clearFilters: () => {
+      return initialState;
+    },
   },
 });
 
-export const { addFilter, removeFilter } = skills.actions;
+export const { addFilter, removeFilter, clearFilters } = skills.actions;
 
 export default skills.reducer;
