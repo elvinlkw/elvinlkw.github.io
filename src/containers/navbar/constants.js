@@ -16,7 +16,7 @@ export const navLinks = [
   },
   {
     title: 'Experience',
-    href: '',
+    href: 'profession-experience-section',
   },
   {
     title: 'Projects',

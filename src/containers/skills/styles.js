@@ -45,6 +45,7 @@ export const StyledFilters = styled.fieldset`
 
 export const StyledCard = styled.div`
   display: block;
+  margin-bottom: 1rem;
 
   .card-image {
     padding-bottom: 8px;

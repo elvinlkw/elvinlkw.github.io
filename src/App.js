@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import Navbar from './containers/navbar';
 import Landing from './containers/landing';
 import Skills from './containers/skills';
+import Experience from './containers/experience';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <Landing />
         <Skills />
+        <Experience />
       </Provider>
     </ThemeProvider>
   );
