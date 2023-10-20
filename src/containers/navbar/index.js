@@ -17,14 +17,14 @@ const Navbar = () => {
     >
       <div className={`container mx-auto ${cn({ 'border-b-2': !hasScroll })}`}>
         <div className='flex-1'>
-          <a
+          <div
             className={`btn btn-ghost normal-case text-xl ${cn({
               'text-white': hasScroll,
             })}`}
             href='!#'
           >
             Elvin
-          </a>
+          </div>
         </div>
         <div className='flex-none'>
           <ul className='menu menu-horizontal items-center px-1'>
