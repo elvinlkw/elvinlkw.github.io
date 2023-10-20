@@ -8,6 +8,7 @@ import Navbar from './containers/navbar';
 import Landing from './containers/landing';
 import Skills from './containers/skills';
 import Experience from './containers/experience';
+import Projects from './containers/projects';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Landing />
         <Skills />
         <Experience />
+        {/* <Projects /> */}
       </Provider>
     </ThemeProvider>
   );

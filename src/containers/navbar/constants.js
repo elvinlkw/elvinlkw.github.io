@@ -20,7 +20,7 @@ export const navLinks = [
   },
   // {
   //   title: 'Projects',
-  //   href: '',
+  //   href: 'projects-section',
   // },
   // {
   //   title: 'Contact Me',

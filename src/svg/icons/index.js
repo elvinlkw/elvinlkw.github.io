@@ -1,6 +1,7 @@
 import Ellipsis from './Ellipsis';
 import Linkedin from './Linkedin';
 import Github from './Github';
+import Kebab from './Kebab';
 
 // DevIcons imports
 import Apple from './devicons/Apple';
@@ -48,6 +49,7 @@ const Icons = {
   Ellipsis,
   Linkedin,
   Github,
+  Kebab,
   // Devicons
   Apple,
   AWS,
