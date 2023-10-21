@@ -2,6 +2,7 @@ import Ellipsis from './Ellipsis';
 import Linkedin from './Linkedin';
 import Github from './Github';
 import Kebab from './Kebab';
+import CaretDown from './CaretDown';
 
 // DevIcons imports
 import Apple from './devicons/Apple';
@@ -45,11 +46,16 @@ import Typescript from './devicons/Typescript';
 import Webpack from './devicons/Webpack';
 import Windows from './devicons/Windows';
 
-const Icons = {
+const CommonIcons = {
   Ellipsis,
   Linkedin,
   Github,
   Kebab,
+  CaretDown,
+};
+
+const Icons = {
+  ...CommonIcons,
   // Devicons
   Apple,
   AWS,
