@@ -18,10 +18,10 @@ export const navLinks = [
     title: 'Experience',
     href: 'profession-experience-section',
   },
-  // {
-  //   title: 'Projects',
-  //   href: 'projects-section',
-  // },
+  {
+    title: 'Projects',
+    href: 'projects-section',
+  },
   // {
   //   title: 'Contact Me',
   //   href: '',

@@ -18,7 +18,7 @@ function App() {
         <Landing />
         <Skills />
         <Experience />
-        {/* <Projects /> */}
+        <Projects />
       </Provider>
     </ThemeProvider>
   );

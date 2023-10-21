@@ -9,9 +9,9 @@ const Projects = () => {
     <StyledContainer id={navLinks[2].href} className='py-16'>
       <div className='container mx-auto'>
         <h1 className='text-4xl'>Projects</h1>
-        <div className='flex gap-16'>
+        <div className='grid projects-container'>
           {projects.map((project) => (
-            <ProjectCard {...project} />
+            <ProjectCard {...project} key={project.name} />
           ))}
         </div>
       </div>
