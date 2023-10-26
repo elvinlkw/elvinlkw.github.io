@@ -8,11 +8,12 @@ import SkillCard from './SkillCard';
 import SkillsFilters from './SkillsFilters';
 import { navLinks } from '../navbar/constants';
 import useFeatureFlag from 'src/hooks/useFeatureFlag';
+import { FF_SKILLS } from 'src/features';
 
 const Skills = () => {
   const dispatch = useDispatch();
   const { skillsets } = useSelector((state) => state.skills);
-  const isEnabled = useFeatureFlag('skills');
+  const isEnabled = useFeatureFlag(FF_SKILLS);
 
   const handleChange = (e) => {
     dispatch(

@@ -51,13 +51,13 @@ export const StyledExperienceCardContainer = styled.ul`
     transform: rotate(1deg);
     position: relative;
     top: 5px;
-    background: #cfc;
+    background: #c0e2e0;
   }
   li:nth-child(3n) {
     transform: rotate(-1deg);
     position: relative;
     top: -5px;
-    background: #ccf;
+    background: #d0cff3;
   }
   li:nth-child(5n) {
     transform: rotate(-2deg);
