@@ -7,16 +7,22 @@ import { motion, AnimatePresence } from 'framer-motion';
 import SkillCard from './SkillCard';
 import SkillsFilters from './SkillsFilters';
 import { navLinks } from '../navbar/constants';
+import useFeatureFlag from 'src/hooks/useFeatureFlag';
 
 const Skills = () => {
   const dispatch = useDispatch();
   const { skillsets } = useSelector((state) => state.skills);
+  const isEnabled = useFeatureFlag('skills');
 
   const handleChange = (e) => {
     dispatch(
       e.target.checked ? addFilter(e.target.name) : removeFilter(e.target.name)
     );
   };
+
+  if (!isEnabled) {
+    return;
+  }
 
   return (
     <StyledContainer id={navLinks[0].href} className='py-16 h-fit'>

@@ -19,8 +19,12 @@ const ProjectCard = ({ name, options, src, skills, visible }) => {
         </div>
         <div className='flex justify-center gap-2 my-2'>
           {skills.map((skill) => (
-            <div className='skill-icon tooltip tooltip-bottom' data-tip={skill}>
-              <motion.div layout whileHover={{ scale: 1.3 }} key={skill}>
+            <div
+              key={skill}
+              className='skill-icon tooltip tooltip-bottom'
+              data-tip={skill}
+            >
+              <motion.div layout whileHover={{ scale: 1.3 }}>
                 <Icon icon={skill} size={24} />
               </motion.div>
             </div>

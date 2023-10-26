@@ -1,3 +1,5 @@
+import { FF_EXPERIENCE, FF_PROJECTS, FF_SKILLS } from 'src/features';
+
 export const navIcons = [
   {
     icon: 'Linkedin',
@@ -13,14 +15,17 @@ export const navLinks = [
   {
     title: 'Skills',
     href: 'skills-and-tooling-section',
+    featureFlag: FF_SKILLS,
   },
   {
     title: 'Experience',
     href: 'profession-experience-section',
+    featureFlag: FF_EXPERIENCE,
   },
   {
     title: 'Projects',
     href: 'projects-section',
+    featureFlag: FF_PROJECTS,
   },
   // {
   //   title: 'Contact Me',
