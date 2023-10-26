@@ -65,6 +65,11 @@ export const StyledExperienceCardContainer = styled.ul`
     top: -10px;
   }
 
+  li:last-child {
+    background: #9ecef0;
+    color: #000;
+  }
+
   li:hover,
   li:focus {
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7);

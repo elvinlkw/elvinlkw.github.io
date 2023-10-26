@@ -35,6 +35,23 @@ const ExperienceCard = () => {
           </div>
         </StyledExperienceCard>
       ))}
+      <StyledExperienceCard>
+        <div className='experience-card-top-content'>
+          <h2 className='text-2xl'>University of Waterloo</h2>
+          <p className='text-lg text-role'>
+            BSc, Honors Electrical Engineering (Co-op)
+          </p>
+          <p className='italic text-center'>Waterloo, Canada</p>
+          <p className='italic py-1'>
+            {formatDate('09/09/2012')} - {formatDate('04/30/2018')}
+          </p>
+        </div>
+        <div className='experience-card-bottom-content'>
+          <div className='float-right badge badge-accent p-3 italic'>
+            School
+          </div>
+        </div>
+      </StyledExperienceCard>
     </StyledExperienceCardContainer>
   );
 };
