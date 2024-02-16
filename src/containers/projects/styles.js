@@ -18,6 +18,7 @@ export const StyledContainer = styled.div`
 
   .projects-container {
     grid-template-columns: repeat(auto-fill, 320px);
+    justify-content: center;
     gap: 64px;
   }
 `;
