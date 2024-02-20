@@ -6,6 +6,7 @@ import CaretDown from './CaretDown';
 
 // DevIcons imports
 import Apple from './devicons/Apple';
+import Angular from './devicons/Angular';
 import AWS from './devicons/AWS';
 import Bash from './devicons/Bash';
 import Bitbucket from './devicons/Bitbucket';
@@ -58,6 +59,7 @@ const Icons = {
   ...CommonIcons,
   // Devicons
   Apple,
+  Angular,
   AWS,
   Bash,
   Bitbucket,
