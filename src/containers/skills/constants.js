@@ -66,6 +66,11 @@ export const skillsets = [
     section: [SECTIONS.FRONTEND],
   },
   {
+    name: 'Vue',
+    icon: 'Vue',
+    section: [SECTIONS.FRONTEND],
+  },
+  {
     name: 'CSS3',
     icon: 'CSS',
     section: [SECTIONS.FRONTEND],

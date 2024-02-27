@@ -44,6 +44,7 @@ import Storybook from './devicons/Storybook';
 import Tailwindcss from './devicons/Tailwindcss';
 import Terraform from './devicons/Terraform';
 import Typescript from './devicons/Typescript';
+import Vue from './devicons/Vue';
 import Webpack from './devicons/Webpack';
 import Windows from './devicons/Windows';
 
@@ -99,6 +100,7 @@ const Icons = {
   Typescript,
   Webpack,
   Windows,
+  Vue,
 };
 
 export default Icons;
