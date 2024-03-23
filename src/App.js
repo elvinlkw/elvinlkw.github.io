@@ -9,6 +9,7 @@ import Landing from './containers/landing';
 import Skills from './containers/skills';
 import Experience from './containers/experience';
 import Projects from './containers/projects';
+import Footer from './containers/footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Skills />
         <Experience />
         <Projects />
+        <Footer />
       </Provider>
     </ThemeProvider>
   );
