@@ -39,7 +39,6 @@ export const StyledExperienceCardContainer = styled.ul`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 250px;
     width: ${CARD_WIDTH};
     padding: 1rem;
     box-shadow: 2px 2px 7px rgba(33, 33, 33, 0.7);
