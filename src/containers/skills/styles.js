@@ -18,6 +18,13 @@ export const StyledContainer = styled.section`
     grid-gap: 36px;
     justify-content: center;
   }
+
+  @media (max-width: 600px) {
+    .icon-container {
+      grid-template-columns: repeat(auto-fill, 75px);
+      grid-gap: 24px;
+    }
+  }
 `;
 
 export const StyledFilters = styled.fieldset`

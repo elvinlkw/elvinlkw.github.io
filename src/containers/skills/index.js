@@ -26,11 +26,11 @@ const Skills = () => {
   }
 
   return (
-    <StyledContainer id={navLinks[0].href} className='py-16 h-fit'>
-      <div className='container mx-auto grid grid-cols-3 gap-8'>
-        <div>
+    <StyledContainer id={navLinks[0].href} className='pt-16 md:py-16 h-fit'>
+      <div className='container mx-auto grid p-6 md:p-0 md:grid-cols-3 gap-y-8 md:gap-8'>
+        <div className='flex flex-col items-center md:items-start'>
           <h1 className='text-4xl'>Skills & Tooling</h1>
-          <div className='text-lg mb-8'>
+          <div className='text-lg mb-8 text-center md:text-left'>
             In this fast-paced world of software engineering, staying ahead and
             updated means having a versatile and robust set of technical skills
             ranging from programming languages, web frameworks, testing and

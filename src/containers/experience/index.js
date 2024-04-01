@@ -14,9 +14,11 @@ const Experience = () => {
   }
 
   return (
-    <StyledContainer id={navLinks[1].href} className='py-16'>
+    <StyledContainer id={navLinks[1].href} className='pt-16 px-6 md:py-16'>
       <div className='container mx-auto'>
-        <h1 className='text-4xl'>Professional Experience & Education</h1>
+        <h1 className='text-4xl text-center md:text-left'>
+          Professional Experience and Education
+        </h1>
         <ExperienceCard />
         <Introduction />
       </div>
