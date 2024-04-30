@@ -2,7 +2,7 @@ export const experiencesList = [
   {
     company: 'Affinity',
     role: 'Software Engineer II',
-    startDate: '05/01/2024',
+    startDate: '05/13/2024',
     endDate: null,
     isCurrent: true,
     isCoop: false,
