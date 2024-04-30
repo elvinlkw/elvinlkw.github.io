@@ -1,5 +1,14 @@
 export const experiencesList = [
   {
+    company: 'Affinity',
+    role: 'Software Engineer II',
+    startDate: '05/01/2024',
+    endDate: null,
+    isCurrent: true,
+    isCoop: false,
+    location: 'Toronto (Remote), Canada',
+  },
+  {
     company: 'fabric Inc.',
     role: 'Software Development Engineer II',
     startDate: '01/01/2023',
