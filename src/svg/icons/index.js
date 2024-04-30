@@ -3,6 +3,7 @@ import Linkedin from './Linkedin';
 import Github from './Github';
 import Kebab from './Kebab';
 import CaretDown from './CaretDown';
+import Star from './Star';
 
 // DevIcons imports
 import Apple from './devicons/Apple';
@@ -54,6 +55,7 @@ const CommonIcons = {
   Github,
   Kebab,
   CaretDown,
+  Star,
 };
 
 const Icons = {

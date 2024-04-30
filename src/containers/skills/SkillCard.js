@@ -2,8 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { StyledCard } from './styles';
 import Icon from 'src/components/icon';
+import StarRating from 'src/components/star-rating';
+import theme from 'src/theme';
+import useFeatureFlag from 'src/hooks/useFeatureFlag';
+import { FF_SKILLS_EXPERTISE } from 'src/features';
 
-const SkillCard = ({ name, icon }) => {
+const SkillCard = ({ name, icon, rating }) => {
+  const isEnabled = useFeatureFlag(FF_SKILLS_EXPERTISE);
+
   return (
     <motion.div
       layout
@@ -20,6 +26,9 @@ const SkillCard = ({ name, icon }) => {
         <div>
           <h3 className='text-md text-center'>{name.toLowerCase()}</h3>
         </div>
+        {isEnabled && (
+          <StarRating background={theme.colors.iBlue} rating={rating} />
+        )}
       </StyledCard>
     </motion.div>
   );

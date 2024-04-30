@@ -18,7 +18,11 @@ export const calculateDifference = (startDate, endDate, isCurrent) => {
   const diffUnix = endDateUnix - _moment(startDate).unix();
 
   const months = Math.round((diffUnix / 2592000) % 12);
-  const years = Math.floor(diffUnix / (2592000 * 12));
+  let years = Math.floor(diffUnix / (2592000 * 12));
+
+  if (years < 0) {
+    years = 0;
+  }
 
   if (years === 0) {
     return `${months} ${pluralize(months, 'mo')}`;
