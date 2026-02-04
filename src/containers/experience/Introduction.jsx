@@ -1,5 +1,5 @@
 import React from 'react';
-import { experienceParagraphs } from './constants';
+import { experienceParagraphs } from './constants.jsx';
 
 const Introduction = () => {
   return (

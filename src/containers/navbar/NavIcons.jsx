@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon from 'src/components/icon';
-import { navIcons } from './constants';
+import { navIcons } from './constants.jsx';
 
 const NavIcons = ({ color }) => {
   return navIcons.map(({ icon, href }) => (

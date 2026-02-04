@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyledContainer } from './styles';
+import { StyledContainer } from './styles.jsx';
 import { navLinks } from '../navbar/constants';
-import Introduction from './Introduction';
-import ExperienceCard from './ExperienceCard';
+import Introduction from './Introduction.jsx';
+import ExperienceCard from './ExperienceCard.jsx';
 import useFeatureFlag from 'src/hooks/useFeatureFlag';
 import { FF_EXPERIENCE } from 'src/features';
 

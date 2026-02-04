@@ -1,6 +1,6 @@
 import React from 'react';
-import CardOptions from './CardOptions';
-import { StyledProjectcard } from './styles';
+import CardOptions from './CardOptions.jsx';
+import { StyledProjectcard } from './styles.jsx';
 import Icon from 'src/components/icon';
 import { motion } from 'framer-motion';
 
@@ -10,7 +10,10 @@ const ProjectCard = ({ name, options, src, skills, visible }) => {
   return (
     <StyledProjectcard className='card card-compact bg-base-100 shadow-xl flex flex-col justify-between'>
       <figure>
-        <img src={process.env.PUBLIC_URL + src} alt={name} />
+        <img
+          src={import.meta.env.BASE_URL + src.replace(/^\//, '')}
+          alt={name}
+        />
       </figure>
       <div className='card-body'>
         <div className='card-body-header flex justify-between'>

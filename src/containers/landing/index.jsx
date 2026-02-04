@@ -1,9 +1,9 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import theme from 'src/theme';
-import { StyledLandingContainer } from './styles';
+import { StyledLandingContainer } from './styles.jsx';
 import Bubble from 'src/components/bubble';
-import Headshot from './Headshot';
+import Headshot from './Headshot.jsx';
 
 const Landing = () => {
   return (

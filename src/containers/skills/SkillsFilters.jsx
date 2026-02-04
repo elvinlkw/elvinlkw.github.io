@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyledFilters } from './styles';
+import { StyledFilters } from './styles.jsx';
 import Checkbox from 'src/components/checkbox';
-import { checkboxList } from './constants';
+import { checkboxList } from './constants.jsx';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearFilters } from 'src/reducers/skills';
 

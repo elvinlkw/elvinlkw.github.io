@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledCheckboxContainer } from './styles';
+import { StyledCheckboxContainer } from './styles.jsx';
 
 const Checkbox = ({ label, checked, name, size, onChange }) => {
   return (

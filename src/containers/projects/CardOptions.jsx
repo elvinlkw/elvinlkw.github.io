@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon from 'src/components/icon';
-import { cardOptionsMap } from './constants';
+import { cardOptionsMap } from './constants.jsx';
 import { motion } from 'framer-motion';
 
 const CardOptions = ({ options }) => {

@@ -1,9 +1,9 @@
 import React from 'react';
-import NavLinks from './NavLinks';
-import NavIcons from './NavIcons';
+import NavLinks from './NavLinks.jsx';
+import NavIcons from './NavIcons.jsx';
 import useScroll from 'src/hooks/useScroll';
 import cn from 'classnames';
-import { StyledContainer, StyledCaret } from './styles';
+import { StyledContainer, StyledCaret } from './styles.jsx';
 import Icon from 'src/components/icon';
 import { motion, AnimatePresence } from 'framer-motion';
 

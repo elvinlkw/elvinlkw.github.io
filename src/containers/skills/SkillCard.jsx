@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { StyledCard } from './styles';
+import { StyledCard } from './styles.jsx';
 import Icon from 'src/components/icon';
 import StarRating from 'src/components/star-rating';
 import theme from 'src/theme';
