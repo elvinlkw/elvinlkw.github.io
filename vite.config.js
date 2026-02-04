@@ -4,15 +4,13 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/elvinlkw.github.io/' : '/',
+  base: '/',
   resolve: {
     alias: {
       src: path.resolve(__dirname, './src'),
     },
   },
   define: {
-    'process.env.PUBLIC_URL': JSON.stringify(
-      process.env.NODE_ENV === 'production' ? '/elvinlkw.github.io' : ''
-    ),
+    'process.env.PUBLIC_URL': JSON.stringify(''),
   },
 });
