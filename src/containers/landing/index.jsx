@@ -5,6 +5,8 @@ import { StyledLandingContainer } from './styles.jsx';
 import Bubble from 'src/components/bubble';
 import Headshot from './Headshot.jsx';
 
+const yearsOfExperience = new Date().getFullYear() - 2021;
+
 const Landing = () => {
   return (
     <StyledLandingContainer className='h-screen flex items-center'>
@@ -35,8 +37,8 @@ const Landing = () => {
             />
           </p>
           <p className='text-lg text-center md:text-left'>
-            I am a Toronto-based software developer with 3 years of experience
-            providing high-impact web solutions.
+            I am a Toronto-based software developer with {yearsOfExperience}{' '}
+            years of experience providing high-impact web solutions.
           </p>
         </div>
         <Headshot />
