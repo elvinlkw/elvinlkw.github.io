@@ -28,7 +28,7 @@ const Navbar = () => {
               })}`}
               href='!#'
             >
-              Elvin
+              Elvin Li
             </div>
           </div>
           <div className='flex-none'>
