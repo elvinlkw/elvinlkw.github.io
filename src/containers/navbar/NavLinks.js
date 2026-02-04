@@ -7,7 +7,7 @@ const NavLinks = ({ hasScroll }) => {
 
   return navLinks.map(({ title, href, featureFlag }) => {
     if (!features?.[featureFlag] || features?.[featureFlag] === null) {
-      return;
+      return null;
     }
 
     return (
