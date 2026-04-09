@@ -1,10 +1,19 @@
 export const experiencesList = [
   {
+    company: 'OpenTable',
+    role: 'Software Engineer',
+    startDate: '04/07/2026',
+    endDate: null,
+    isCurrent: true,
+    isCoop: false,
+    location: 'Toronto, Canada',
+  },
+  {
     company: 'Affinity',
     role: 'Software Engineer II',
     startDate: '05/13/2024',
-    endDate: null,
-    isCurrent: true,
+    endDate: '03/31/2026',
+    isCurrent: false,
     isCoop: false,
     location: 'Toronto (Remote), Canada',
   },
