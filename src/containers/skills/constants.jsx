@@ -47,12 +47,6 @@ export const skillsets = [
     rating: 5,
   },
   {
-    name: 'Angular',
-    icon: 'Angular',
-    section: [SECTIONS.FRONTEND],
-    rating: 1,
-  },
-  {
     name: 'AWS',
     icon: 'AWS',
     section: [SECTIONS.DEVOPS],
