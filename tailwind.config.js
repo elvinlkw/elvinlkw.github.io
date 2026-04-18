@@ -1,4 +1,4 @@
-import theme from './src/theme.jsx';
+import theme from './src/theme';
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

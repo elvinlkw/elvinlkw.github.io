@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Headshot = () => {
   return (
     <div className='avatar flex justify-end order-0 md:order-1'>

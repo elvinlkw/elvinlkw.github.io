@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components';
-import theme from './theme.jsx';
+import theme from './theme';
 import store from './store.jsx';
 import { Provider } from 'react-redux';
 

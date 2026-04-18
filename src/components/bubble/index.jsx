@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledBubble } from './styles.jsx';
+import { StyledBubble } from './styles';
 
 const Bubble = ({ children }) => {
   return (
