@@ -13,3 +13,9 @@ export type Skill = {
   section: Section[];
   rating: number;
 };
+
+export type FeatureFlagKey =
+  | 'FF_SKILLS'
+  | 'FF_PROJECTS'
+  | 'FF_EXPERIENCE'
+  | 'FF_SKILLS_EXPERTISE';
