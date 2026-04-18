@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyledContainer } from './styles.jsx';
+import { StyledContainer } from './styles';
 import { useDispatch, useSelector } from 'react-redux';
 import sortBy from 'lodash/sortBy';
 import { addFilter, removeFilter } from 'src/reducers/skills';
 import { motion, AnimatePresence } from 'framer-motion';
 import SkillCard from './SkillCard.jsx';
-import SkillsFilters from './SkillsFilters.jsx';
+import SkillsFilters from './SkillsFilters';
 import { navLinks } from '../navbar/constants';
 import useFeatureFlag from 'src/hooks/useFeatureFlag';
 import { FF_SKILLS } from 'src/features';

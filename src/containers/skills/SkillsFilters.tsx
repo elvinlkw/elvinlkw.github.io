@@ -1,15 +1,20 @@
-import React from 'react';
-import { StyledFilters } from './styles.jsx';
+import { StyledFilters } from './styles';
 import Checkbox from 'src/components/checkbox';
-import { checkboxList } from './constants.jsx';
+import { checkboxList } from './constants.js';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearFilters } from 'src/reducers/skills';
+import { ChangeEvent } from 'react';
+import type { RootState } from 'src/types/redux';
 
-const SkillsFilters = ({ onChange }) => {
+interface SkillsFiltersProps {
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+}
+
+const SkillsFilters = ({ onChange }: SkillsFiltersProps) => {
   const dispatch = useDispatch();
-  const { filters } = useSelector((state) => state.skills);
+  const { filters } = useSelector((state: RootState) => state.skills);
 
-  const handleClearFilters = (e) => {
+  const handleClearFilters = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     dispatch(clearFilters());
   };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { navLinks } from './constants.jsx';
+import { navLinks } from './constants';
 import { useSelector } from 'react-redux';
 
 const NavLinks = ({ hasScroll }) => {

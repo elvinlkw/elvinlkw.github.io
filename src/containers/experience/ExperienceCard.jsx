@@ -1,7 +1,10 @@
 import React from 'react';
-import { experiencesList } from './constants.jsx';
+import { experiencesList } from './constants';
 import { formatDate, calculateDifference } from 'src/utils/date';
-import { StyledExperienceCardContainer, StyledExperienceCard } from './styles.jsx';
+import {
+  StyledExperienceCardContainer,
+  StyledExperienceCard,
+} from './styles.jsx';
 
 const ExperienceCard = () => {
   return (

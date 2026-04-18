@@ -27,8 +27,4 @@ export const navLinks = [
     href: 'projects-section',
     featureFlag: FF_PROJECTS,
   },
-  // {
-  //   title: 'Contact Me',
-  //   href: '',
-  // },
 ];

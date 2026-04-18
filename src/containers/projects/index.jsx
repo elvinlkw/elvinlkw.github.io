@@ -2,7 +2,7 @@ import React from 'react';
 import { StyledContainer } from './styles.jsx';
 import { navLinks } from '../navbar/constants';
 import ProjectCard from './ProjectCard.jsx';
-import { projects } from './constants.jsx';
+import { projects } from './constants';
 import useFeatureFlag from 'src/hooks/useFeatureFlag';
 import { FF_PROJECTS } from 'src/features';
 

@@ -6,7 +6,7 @@ export const SECTIONS = {
   OPERATING_SYSTEMS: 'OPERATING_SYSTEMS',
   AGILE: 'AGILE',
   TESTING: 'TESTING',
-};
+} as const;
 
 export const checkboxList = [
   {

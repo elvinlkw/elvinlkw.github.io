@@ -25,6 +25,7 @@
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.24",
     "@types/node": "^20.10.5",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.1",
